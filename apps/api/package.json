@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "start": "wunderctl up --debug",
-    "generate": "wunderctl generate up --debug",
+    "start": "wunderctl up --debug --wundergraph-dir .",
+    "generate": "wunderctl generate up --debug --wundergraph-dir .",
     "check": "tsc --noEmit"
   },
   "author": "",
