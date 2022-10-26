@@ -11,5 +11,6 @@
     "dev": {
       "cache": false
     }
-  }
+  },
+  "globalEnv": ["NODE_ENV", "GITPOD_WORKSPACE_ID"] 
 }
