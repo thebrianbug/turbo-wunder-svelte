@@ -1,8 +1,8 @@
 {
   "name": "generated-wundergraph",
   "version": "0.0.0",
-  "main": "client.ts",
-  "type": "module",
-  "module": "client.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "license": "MIT"
 }
