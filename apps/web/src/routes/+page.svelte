@@ -1,6 +1,6 @@
 <script lang="ts">
   import { MyCounterButton } from 'ui';
-  import { createClient } from 'generated/client';
+  import { createClient } from 'generated';
 
   export const client = createClient()
 
