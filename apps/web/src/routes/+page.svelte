@@ -1,5 +1,6 @@
 <script lang="ts">
   import { MyCounterButton } from 'ui';
+  import { createClient } from 'generated/client';
 </script>
 
 <h1>Web</h1>

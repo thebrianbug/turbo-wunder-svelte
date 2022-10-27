@@ -28,3 +28,7 @@ yarn-error.log*
 
 # turbo
 .turbo
+
+# Wundergraph
+**/generated/*
+!**/generated/package.json
