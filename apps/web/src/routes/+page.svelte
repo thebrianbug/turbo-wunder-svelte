@@ -1,6 +1,6 @@
 <script lang="ts">
   import { MyCounterButton } from 'ui';
-  import { createClient } from 'generated';
+  import { createClient } from 'generated-wundergraph';
 
   export const client = createClient()
 
