@@ -87,7 +87,7 @@ configureWunderGraphApplication({
   codeGenerators: [
     {
       templates: [templates.typescript.client],
-      path: './generated'
+      path: '../../packages/generated-wundergraph'
     }
   ],
   cors: {
