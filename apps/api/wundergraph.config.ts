@@ -86,7 +86,13 @@ configureWunderGraphApplication({
   operations,
   codeGenerators: [
     {
-      templates: [templates.typescript.client],
+      templates: [
+        // use all the typescript react templates to generate a client
+        ...templates.typescript.all,
+        templates.typescript.operations,
+        templates.typescript.linkBuilder,
+        templates.typescript.client
+      ],
       path: '../../packages/generated-wundergraph'
     }
   ],
@@ -98,7 +104,11 @@ configureWunderGraphApplication({
             // change this before deploying to production to the actual domain where you're deploying your app
             'http://localhost:3000'
           ]
-        : ['http://localhost:3000', 'http://127.0.0.1:3000/', new EnvironmentVariable('WG_ALLOWED_ORIGIN')]
+        : [
+            'http://localhost:3000',
+            'http://127.0.0.1:3000/',
+            new EnvironmentVariable('WG_ALLOWED_ORIGIN')
+          ]
   },
   dotGraphQLConfig: {
     hasDotWunderGraphDirectory: false
