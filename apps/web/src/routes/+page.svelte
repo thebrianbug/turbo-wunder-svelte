@@ -5,7 +5,12 @@
   export const client = createClient();
 
   let d = client.query({
-    operationName: 'Countries'
+    operationName: 'Countries',
+    input: {
+      filter: {
+        continent: { eq: 'SA' }
+      }
+    }
   });
 
   console.log(d);
