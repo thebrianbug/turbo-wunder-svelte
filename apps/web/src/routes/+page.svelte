@@ -1,17 +1,8 @@
 <script lang="ts">
   import { MyCounterButton } from 'ui';
-  import { createClient } from 'generated-wundergraph';
+  import { page } from '$app/stores';
 
-  export const client = createClient();
-
-  const d = client.query({
-    operationName: 'Countries',
-    input: {
-      filter: {
-        continent: { eq: 'SA' }
-      }
-    }
-  });
+  const contries = $page.data.response?.data?.countries_countries;
 </script>
 
 <h1>Web</h1>
@@ -19,11 +10,6 @@
 
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-{#await d}
-  <span>Loading... please wait</span>
-{:then data}
-  <div>{data}</div>
-{:catch error}
-  <span>Something went wrong: {error.message} 🤕</span>
-  {console.error(error)}
-{/await}
+{#each contries as country}
+  <div>{country.name}</div>
+{/each}

@@ -20,7 +20,7 @@ export const WUNDERGRAPH_S3_ENABLED = false;
 export const WUNDERGRAPH_AUTH_ENABLED = false;
 
 export const defaultClientConfig: ClientConfig = {
-	applicationHash: "ec07225d",
+	applicationHash: "44ba183b",
 	applicationPath: "app/main",
 	baseURL: "http://localhost:9991",
 	sdkVersion: "0.116.1",
