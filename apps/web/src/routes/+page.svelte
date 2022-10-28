@@ -4,7 +4,7 @@
 
   export const client = createClient();
 
-  let d = client.query({
+  const d = client.query({
     operationName: 'Countries',
     input: {
       filter: {
@@ -12,8 +12,6 @@
       }
     }
   });
-
-  console.log(d);
 </script>
 
 <h1>Web</h1>
