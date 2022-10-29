@@ -30,5 +30,5 @@ yarn-error.log*
 .turbo
 
 # Wundergraph
-**/generated/*
-!**/generated/package.json
+**/generated-wundergraph/*
+!**/generated-wundergraph/package.json
