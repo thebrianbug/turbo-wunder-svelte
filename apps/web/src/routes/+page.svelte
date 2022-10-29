@@ -2,7 +2,7 @@
   import { MyCounterButton } from 'ui';
   import { page } from '$app/stores';
 
-  const contries = $page.data.response?.data?.countries_countries;
+  const contries = $page.data?.countries_countries;
 </script>
 
 <h1>Web</h1>

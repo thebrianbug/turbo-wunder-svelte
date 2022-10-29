@@ -12,5 +12,5 @@ export async function load() {
     }
   });
 
-  return { response };
+  return response?.data;
 }
