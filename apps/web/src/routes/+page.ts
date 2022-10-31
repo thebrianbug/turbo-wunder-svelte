@@ -1,6 +1,7 @@
 import type { OperationRequestOptions } from '@wundergraph/sdk/client';
 import { createClient } from 'generated-wundergraph';
 import type { Operations } from 'generated-wundergraph';
+import type { CountriesResponse } from 'generated-wundergraph/models';
 
 type Queries = Extract<keyof Operations['queries'], string>;
 
@@ -11,15 +12,15 @@ interface QueryRequestOptions<OperationName extends Queries = Queries>
 export async function load() {
   const client = createClient();
 
-  // TODO: get types to generate for response
-  const response = await client.query<QueryRequestOptions>({
+  // TODO: auto-generate types instead of casting
+  const response = (await client.query<QueryRequestOptions>({
     operationName: 'Countries',
     input: {
       filter: {
         continent: { eq: 'SA' }
       }
     }
-  });
+  })) as CountriesResponse;
 
-  return response?.data;
+  return response.data;
 }
