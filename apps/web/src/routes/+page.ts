@@ -1,7 +1,7 @@
 import type { OperationRequestOptions } from '@wundergraph/sdk/client';
 import { createClient } from 'generated-wundergraph';
 import type { Operations } from 'generated-wundergraph';
-import type { CountriesResponse, CountriesResponseData } from 'generated-wundergraph/models';
+import type { CountriesResponseData } from 'generated-wundergraph/models';
 import type { Load } from '@sveltejs/kit';
 
 type Queries = Extract<keyof Operations['queries'], string>;
