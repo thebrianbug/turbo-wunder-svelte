@@ -1,20 +1,13 @@
-import type { OperationRequestOptions } from '@wundergraph/sdk/client';
+import type { Load } from '@sveltejs/kit';
 import { createClient } from 'generated-wundergraph';
 import type { Operations } from 'generated-wundergraph';
-import type { CountriesResponseData } from 'generated-wundergraph/models';
-import type { Load } from '@sveltejs/kit';
+import { createHooks } from '../lib/hooks';
 
-type Queries = Extract<keyof Operations['queries'], string>;
-
-// eslint-disable-next-line @typescript-eslint/no-empty-interface
-interface QueryRequestOptions<OperationName extends Queries = Queries>
-  extends OperationRequestOptions<OperationName, Operations['queries'][OperationName]['input']> {}
+const client = createClient();
+const hooks = createHooks<Operations>(client);
 
 export const load: Load = async () => {
-  const client = createClient();
-
-  // TODO: auto-generate types instead of casting
-  const response = await client.query<QueryRequestOptions>({
+  const response = await hooks.query({
     operationName: 'Countries',
     input: {
       filter: {
@@ -23,5 +16,5 @@ export const load: Load = async () => {
     }
   });
 
-  return response?.data as CountriesResponseData;
+  return response;
 };
