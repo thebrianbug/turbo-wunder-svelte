@@ -1,8 +1,8 @@
 <script lang="ts">
   import { MyCounterButton } from 'ui';
-  import { page } from '$app/stores';
+  import type { PageData } from './$types';
 
-  const contries = $page.data?.countries_countries;
+  export let data: PageData;
 </script>
 
 <h1>Web</h1>
@@ -10,6 +10,6 @@
 
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-{#each contries as country}
+{#each data.countries_countries ?? [] as country}
   <div>{country.name}</div>
 {/each}

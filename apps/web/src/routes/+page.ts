@@ -1,9 +1,13 @@
+import type { Load } from '@sveltejs/kit';
 import { createClient } from 'generated-wundergraph';
+import type { Operations } from 'generated-wundergraph';
+import { createHooks } from '../lib/hooks';
 
-export async function load() {
-  const client = createClient();
+const client = createClient();
+const hooks = createHooks<Operations>(client);
 
-  const response = await client.query({
+export const load: Load = async () => {
+  const response = await hooks.query({
     operationName: 'Countries',
     input: {
       filter: {
@@ -12,5 +16,5 @@ export async function load() {
     }
   });
 
-  return response?.data;
-}
+  return response ?? Error('No Data');
+};
