@@ -10,6 +10,6 @@
 
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-{#each data?.countries_countries as country}
+{#each data?.countries_countries ?? [] as country}
   <div>{country.name}</div>
 {/each}
