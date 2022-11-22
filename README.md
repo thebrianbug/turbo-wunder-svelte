@@ -1,30 +1,14 @@
-# Turborepo Svelte starter
+# Turborepo + Svelte + Wundergraph
 
-This is an official starter Turborepo.
+Forked from the [official Svelte starter with Turborepo](https://vercel.com/templates/svelte/turborepo-sveltekit-starter).
 
-## What's inside?
+## Getting started locally
 
-This Turborepo includes the following packages/apps:
-
-### Apps and Packages
-
-- `docs`: a [svelte-kit](https://kit.svelte.dev/) app
-- `web`: another [svelte-kit](https://kit.svelte.dev/) app
-- `ui`: a stub Svelte component library shared by both `web` and `docs` applications
-- `eslint-config-custom`: `eslint` configurations (includes `eslint-plugin-svelte` and `eslint-config-prettier`)
-
-Each package/app is 100% [TypeScript](https://www.typescriptlang.org/).
-
-### Utilities
-
-This Turborepo has some additional tools already setup for you:
-
-- [TypeScript](https://www.typescriptlang.org/) for static type checking
-- [ESLint](https://eslint.org/) for code linting
-- [Prettier](https://prettier.io) for code formatting
-
-## Getting started
-
-1. Install [volta](https://volta.sh/) to auto-use correct npm/node (or check `package.json`)
-2. Install packages `npm install`
-3. Run dev server `npm run dev`
+1. Install [Docker Desktop](https://docs.docker.com/compose/install)
+2. Install [Volta](https://volta.sh/)
+3. Install packages `npm install`
+4. Configure env vars (coming soon)
+   - Copy `/example.db.env` to `/db.env`
+   - Copy `/packages/db/example.env` to `/packages/db/.env`
+5. Launch local Postgres database `npm run db:up` (coming soon)
+6. Run project `npm run dev`
