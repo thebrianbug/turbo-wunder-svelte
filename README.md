@@ -1,4 +1,4 @@
-# Turborepo, SvelteKit, Wundergraph, and more!
+# Turborepo, SvelteKit, Wundergraph, and more
 
 Forked from the [official Svelte starter with Turborepo](https://vercel.com/templates/svelte/turborepo-sveltekit-starter).
 
