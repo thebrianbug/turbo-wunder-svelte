@@ -5,6 +5,7 @@
     "packages/*"
   ],
   "scripts": {
+    "db:up": "docker compose up -d",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "generate": "turbo run generate",
