@@ -1,6 +1,14 @@
-# Turborepo + Svelte + Wundergraph
+# Turborepo, SvelteKit, Wundergraph, and more!
 
 Forked from the [official Svelte starter with Turborepo](https://vercel.com/templates/svelte/turborepo-sveltekit-starter).
+
+This is a boilerplate that aims to help you get all the following technologies working together nicely.
+
+- [TurboRepo](https://turborepo.org/)
+- [Wundergraph](https://wundergraph.com/)
+- [Postgres](https://www.postgresql.org/)
+- [SvelteKit](https://kit.svelte.dev)
+- [TailwindCSS](https://tailwindcss.com/)
 
 ## Getting started locally
 
