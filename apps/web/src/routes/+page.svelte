@@ -2,7 +2,7 @@
   import { MyCounterButton } from 'ui';
   import type { PageData } from './$types';
 
-  export let req: PageData;
+  export let data: PageData;
 </script>
 
 <h1>Web</h1>
@@ -10,6 +10,6 @@
 
 <p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
-{#each req?.data?.countries_countries ?? [] as country}
+{#each data?.countries_countries ?? [] as country}
   <div>{country.name}</div>
 {/each}
