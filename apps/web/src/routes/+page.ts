@@ -13,5 +13,5 @@ export const load: Load = async () => {
     }
   });
 
-  return response ?? Error('No Data');
+  return response;
 };
