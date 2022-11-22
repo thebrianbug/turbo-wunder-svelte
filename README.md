@@ -14,9 +14,11 @@ This is a boilerplate that aims to help you get all the following technologies w
 
 1. Install [Docker Desktop](https://docs.docker.com/compose/install)
 2. Install [Volta](https://volta.sh/)
-3. Install packages `npm install`
-4. Configure env vars (coming soon)
+3. Check node version matches `package.json` with `node -v`
+   - If this is not working, try restarting your terminal instance
+4. Install packages `npm install`
+5. Configure env vars (coming soon)
    - Copy `/example.db.env` to `/db.env`
    - Copy `/packages/db/example.env` to `/packages/db/.env`
-5. Launch local Postgres database `npm run db:up` (coming soon)
-6. Run project `npm run dev`
+6. Launch local Postgres database `npm run db:up` (coming soon)
+7. Run project `npm run dev`
