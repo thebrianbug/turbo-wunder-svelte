@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "ui": "*",
-    "generated": "*"
+    "generated-wundergraph": "*"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "latest",
