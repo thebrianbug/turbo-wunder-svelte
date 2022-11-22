@@ -18,7 +18,12 @@
     "prettier-plugin-svelte": "^2.7.0",
     "turbo": "latest"
   },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "packageManager": "npm@8.19.3",
   "volta": {
-    "node": "16.18.1"
+    "node": "16.18.1",
+    "npm": "8.19.3"
   }
 }
