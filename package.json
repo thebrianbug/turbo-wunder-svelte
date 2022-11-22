@@ -19,6 +19,6 @@
     "turbo": "latest"
   },
   "volta": {
-    "node": "18.12.1"
+    "node": "16.18.1"
   }
 }
