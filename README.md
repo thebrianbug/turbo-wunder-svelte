@@ -23,13 +23,8 @@ This Turborepo has some additional tools already setup for you:
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
 
-## Using this example
+## Getting started
 
-Run the following command:
-
-```sh
-npx degit vercel/turborepo/examples/with-svelte with-svelte
-cd with-svelte
-yarn install
-git init . && git add . && git commit -m "Init"
-```
+1. Install [volta](https://volta.sh/) to auto-use correct npm/node (or check `package.json`)
+2. Install packages `npm install`
+3. Run dev server `npm run dev`
