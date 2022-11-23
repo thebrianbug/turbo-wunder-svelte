@@ -14,5 +14,5 @@ model Todo {
   id        Int      @id
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
-  item      String?
+  task      String?
 }
