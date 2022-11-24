@@ -6,10 +6,11 @@
   ],
   "scripts": {
     "db:up": "docker compose up -d",
-    "seed": "turbo run seed",
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "generate": "turbo run generate",
+    "db:seed": "turbo run db:seed",
+    "db:push": "turbo run db:push",
     "lint": "turbo run lint",
     "format": "prettier --write ."
   },

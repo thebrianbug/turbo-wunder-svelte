@@ -14,7 +14,10 @@
     "generate": {
       "outputs": ["generated-wundergraph/**"]
     },
-    "seed": {
+    "db:seed": {
+      "cache": false
+    },
+    "db:push": {
       "cache": false
     }
   },
