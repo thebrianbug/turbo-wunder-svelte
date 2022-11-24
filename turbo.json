@@ -13,6 +13,9 @@
     },
     "generate": {
       "outputs": ["generated-wundergraph/**"]
+    },
+    "seed": {
+      "cache": false
     }
   },
   "globalEnv": ["NODE_ENV", "GITPOD_WORKSPACE_ID", "WG_ALLOWED_ORIGIN"]
