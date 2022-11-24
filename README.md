@@ -21,4 +21,7 @@ This is a boilerplate that aims to help you get all the following technologies w
    - Copy `/example.db.env` to `/db.env`
    - Copy `/packages/db/example.env` to `/packages/db/.env`
 6. Launch local Postgres database `npm run db:up`
-7. Run project `npm run dev`
+7. Run generators for Wundergraph and Prisma `npm run generate`
+8. Apply current database structure `npm run db:push`
+9. Seed data `npm run db:seed`
+10. Run project `npm run dev`
