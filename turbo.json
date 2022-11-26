@@ -12,7 +12,8 @@
       "cache": false
     },
     "generate": {
-      "outputs": ["generated-wundergraph/**"]
+      "outputs": ["generated-wundergraph/**"],
+      "cache": false
     },
     "db:seed": {
       "cache": false
