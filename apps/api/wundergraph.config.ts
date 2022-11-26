@@ -13,9 +13,14 @@ const countries = introspect.graphql({
   url: 'https://countries.trevorblades.com/'
 });
 
+const db = introspect.postgresql({
+  databaseURL: new EnvironmentVariable('DATABASE_URL'),
+  apiNamespace: 'db'
+});
+
 // configureWunderGraph emits the configuration
 configureWunderGraphApplication({
-  apis: [countries],
+  apis: [countries, db],
   server,
   operations,
   codeGenerators: [
